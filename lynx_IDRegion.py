@@ -2,13 +2,11 @@
 import arcpy
 import os
 
-patch_dir = (r"T:\FS\NFS\R01\Program\7140Geometronics\GIS\Project\zz_Lynx_Hanvey_Dec2019\Data\Outputs_AllArea.gdb")
-
-Administrative_Region_Boundary = (r"T:\FS\Reference\EDW\BoundaryAdmin_AdministrativeRegion_EDW.lyr")
-
-output_dir = (r"T:\FS\NFS\R01\Program\7140Geometronics\GIS\Project\zz_Lynx_Hanvey_Dec2019\Data\Outputs_AllArea.gdb")
-
-table_dir = (r"T:\FS\NFS\R01\Program\7140Geometronics\GIS\Project\zz_Lynx_Hanvey_Dec2019\Data\PatchOutputSpreadsheets\AllAreaSummariesforMaps")
+# params
+patch_dir = (r"")
+Administrative_Region_Boundary = (r"")
+output_dir = (r"")
+table_dir = (r"")
 
 def addAreaField(feature, fieldName):
 	if arcpy.Describe(feature).shapeType == "Polygon":
